@@ -1,0 +1,16 @@
+[
+  {"id": "q01", "type": "known", "question": "What is the objective of each player in a game of chess?", "expected_chunk_ids": ["fide_basic_rules_005"]},
+  {"id": "q02", "type": "known", "question": "How does a knight move on the chessboard?", "expected_chunk_ids": ["fide_basic_rules_022"]},
+  {"id": "q03", "type": "known", "question": "What is castling in chess?", "expected_chunk_ids": ["fide_basic_rules_029"]},
+  {"id": "q04", "type": "known", "question": "What happens when a pawn reaches the last rank?", "expected_chunk_ids": ["fide_basic_rules_027"]},
+  {"id": "q05", "type": "known", "question": "What is an en passant capture?", "expected_chunk_ids": ["fide_basic_rules_026"]},
+  {"id": "q06", "type": "known", "question": "What is a stalemate?", "expected_chunk_ids": ["fide_basic_rules_043"]},
+  {"id": "q07", "type": "known", "question": "How many pieces does each player start the game with?", "expected_chunk_ids": ["fide_basic_rules_011"]},
+  {"id": "q08", "type": "known", "question": "What is the touch-move rule?", "expected_chunk_ids": ["fide_basic_rules_040"]},
+  {"id": "q09", "type": "known", "question": "Why should you control the centre of the board in the opening?", "expected_chunk_ids": ["wikibooks_opening_principles_053", "wikibooks_opening_principles_054"]},
+  {"id": "q10", "type": "known", "question": "What is the Sicilian Defence?", "expected_chunk_ids": ["wikibooks_opening_principles_059"]},
+  {"id": "q11", "type": "inferred", "question": "If I haven't moved my king or the rook on that side yet, is there anything else that could still stop me from castling right now?", "expected_chunk_ids": ["fide_basic_rules_031", "fide_basic_rules_032", "fide_basic_rules_033"]},
+  {"id": "q12", "type": "inferred", "question": "My opponent just pushed a pawn two squares forward and it landed right beside one of my pawns. Can I capture it, and how?", "expected_chunk_ids": ["fide_basic_rules_026"]},
+  {"id": "q13", "type": "inferred", "question": "I have no legal moves available, but my king is not currently under attack. What is the result of the game?", "expected_chunk_ids": ["fide_basic_rules_043"]},
+  {"id": "q14", "type": "inferred", "question": "Why would a player lose their right to castle, even with no other rule getting in the way?", "expected_chunk_ids": ["fide_basic_rules_030"]}
+]
