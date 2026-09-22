@@ -1,0 +1,5 @@
+What is castling?
+Castling is a move where the king moves two squares toward a rook and the rook moves next to it.
+
+What is en passant?
+En passant is a special pawn capture that can only be done immediately after a pawn moves two squares.

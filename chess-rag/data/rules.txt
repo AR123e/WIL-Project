@@ -1,0 +1,2 @@
+Castling is a move where the king moves two squares toward a rook.
+The rook moves next to the king.
