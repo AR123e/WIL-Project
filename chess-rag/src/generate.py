@@ -7,10 +7,15 @@ import requests
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1"
 
-SYSTEM_PROMPT = """You are a friendly chess assistant for absolute beginners.
-Answer ONLY using the provided context. If the context does not contain the
-answer, say you don't know rather than guessing. Keep answers short and
-plain-language."""
+SYSTEM_PROMPT = """You are a helpful chess assistant for beginners.
+
+Answer using ONLY the provided context.
+
+If the answer is partially available, try to explain using the context.
+
+Only say "I don't know" if the answer is completely missing.
+
+Keep answers simple and beginner-friendly."""
 
 
 def build_prompt(question, chunks):

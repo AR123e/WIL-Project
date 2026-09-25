@@ -1,0 +1,15 @@
+id,type,question,top1_chunk_id,top1_score,expected_chunk_ids,hit_at_1,hit_at_3,unanswered
+q01,known,What is the objective of each player in a game of chess?,wikibooks_opening_principles_050,14.078,fide_basic_rules_005,False,True,False
+q02,known,How does a knight move on the chessboard?,fide_basic_rules_012,6.193,fide_basic_rules_022,False,False,False
+q03,known,What is castling in chess?,wikibooks_opening_principles_050,8.27,fide_basic_rules_029,False,False,False
+q04,known,What happens when a pawn reaches the last rank?,fide_basic_rules_048,8.572,fide_basic_rules_027,False,True,False
+q05,known,What is an en passant capture?,fide_basic_rules_026,10.613,fide_basic_rules_026,True,True,False
+q06,known,What is a stalemate?,wikibooks_opening_principles_050,5.806,fide_basic_rules_043,False,True,False
+q07,known,How many pieces does each player start the game with?,fide_basic_rules_003,7.998,fide_basic_rules_011,False,True,False
+q08,known,What is the touch-move rule?,wikibooks_opening_principles_050,6.145,fide_basic_rules_040,False,False,False
+q09,known,Why should you control the centre of the board in the opening?,wikibooks_opening_principles_053,14.409,wikibooks_opening_principles_053;wikibooks_opening_principles_054,True,True,False
+q10,known,What is the Sicilian Defence?,wikibooks_opening_principles_059,7.498,wikibooks_opening_principles_059,True,True,False
+q11,inferred,"If I haven't moved my king or the rook on that side yet, is there anything else that could still stop me from castling right now?",fide_basic_rules_033,14.733,fide_basic_rules_031;fide_basic_rules_032;fide_basic_rules_033,True,True,False
+q12,inferred,"My opponent just pushed a pawn two squares forward and it landed right beside one of my pawns. Can I capture it, and how?",fide_basic_rules_026,14.605,fide_basic_rules_026,True,True,False
+q13,inferred,"I have no legal moves available, but my king is not currently under attack. What is the result of the game?",fide_basic_rules_005,16.932,fide_basic_rules_043,False,False,False
+q14,inferred,"Why would a player lose their right to castle, even with no other rule getting in the way?",fide_basic_rules_010,12.579,fide_basic_rules_030,False,True,False
