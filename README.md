@@ -157,4 +157,4 @@ This project demonstrates a simple but complete RAG system:
 
 - Retrieval (BM25)
 - Generation (LLM)
-- Evaluation (metrics + testi
+- Evaluation (metrics + testing)
