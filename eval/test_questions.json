@@ -1,0 +1,907 @@
+[
+ {
+  "id": "Q01",
+  "type": "known",
+  "question": "How does the bishop move?",
+  "evidence": [
+   "bishop may move to any square along a diagonal",
+   "bishop moves any number of squares diagonally"
+  ],
+  "keywords": [
+   "diagonal"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q02",
+  "type": "known",
+  "question": "How does a rook move?",
+  "evidence": [
+   "rook may move to any square along the file or the rank",
+   "rook moves any number of squares in a straight line"
+  ],
+  "keywords": [
+   "file|rank|straight"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q03",
+  "type": "known",
+  "question": "How does the knight move?",
+  "evidence": [
+   "l-shape"
+  ],
+  "keywords": [
+   "l-shape|l shape|l-shaped|nearest"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q04",
+  "type": "known",
+  "question": "What is en passant?",
+  "evidence": [
+   "en passant"
+  ],
+  "keywords": [
+   "pawn",
+   "two squares|two-square"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q05",
+  "type": "known",
+  "question": "What happens when a pawn reaches the last rank?",
+  "evidence": [
+   "promotion",
+   "is promoted, usually to a queen"
+  ],
+  "keywords": [
+   "queen|rook|bishop|knight"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q06",
+  "type": "known",
+  "question": "What is stalemate?",
+  "evidence": [
+   "stalemate",
+   "called stalemate"
+  ],
+  "keywords": [
+   "draw",
+   "no legal move"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q07",
+  "type": "known",
+  "question": "How many pieces does each player start with?",
+  "evidence": [
+   "16 light-coloured pieces",
+   "starts with 16 pieces"
+  ],
+  "keywords": [
+   "16"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q08",
+  "type": "known",
+  "question": "When do I lose the right to castle?",
+  "evidence": [
+   "right to castle has been lost",
+   "you can only castle if"
+  ],
+  "keywords": [
+   "moved"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q09",
+  "type": "known",
+  "question": "What is the objective of chess?",
+  "evidence": [
+   "in such a way that the opponent has no legal move",
+   "the goal of chess is to checkmate"
+  ],
+  "keywords": [
+   "checkmate"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q10",
+  "type": "known",
+  "question": "Who makes the first move in chess?",
+  "evidence": [
+   "makes the first move",
+   "white always makes the first move"
+  ],
+  "keywords": [
+   "white"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q11",
+  "type": "known",
+  "question": "What is the Sicilian Defence?",
+  "evidence": [
+   "1.e4 c5"
+  ],
+  "keywords": [
+   "c5"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q12",
+  "type": "known",
+  "question": "What is a gambit?",
+  "evidence": [
+   "called a gambit",
+   "gambit: an opening"
+  ],
+  "keywords": [
+   "sacrifice|give up|offer"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q13",
+  "type": "inferred",
+  "question": "Why shouldn't I bring my queen out early?",
+  "evidence": [
+   "avoid moving your queen",
+   "bringing your queen out too early"
+  ],
+  "keywords": [
+   "chase"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q14",
+  "type": "inferred",
+  "question": "Why is controlling the centre important?",
+  "evidence": [
+   "pieces in the centre are able to move to more squares"
+  ],
+  "keywords": [
+   "more squares|mobility|move to more"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q15",
+  "type": "inferred",
+  "question": "Can my bishop jump over another piece?",
+  "evidence": [
+   "may not move over any intervening pieces",
+   "the only piece that can jump over other pieces"
+  ],
+  "keywords": [
+   "not|cannot|can't|no"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q16",
+  "type": "inferred",
+  "question": "Am I allowed to capture the enemy king?",
+  "evidence": [
+   "is not allowed"
+  ],
+  "keywords": [
+   "not|cannot|can't|no"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q17",
+  "type": "inferred",
+  "question": "Can I make a move that leaves my own king in danger?",
+  "evidence": [
+   "expose the king of the same colour to check",
+   "illegal to leave your own king in check"
+  ],
+  "keywords": [
+   "not|cannot|can't|illegal"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q18",
+  "type": "inferred",
+  "question": "What should I do with my knights and bishops at the start of the game?",
+  "evidence": [
+   "move your pieces away from their starting positions",
+   "develop your knights and bishops quickly"
+  ],
+  "keywords": [
+   "develop|move"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q19",
+  "type": "inferred",
+  "question": "Does the game end if neither side can possibly checkmate?",
+  "evidence": [
+   "dead position",
+   "neither player can possibly checkmate",
+   "neither player can possibly checkmate the other"
+  ],
+  "keywords": [
+   "draw"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q20",
+  "type": "inferred",
+  "question": "Why would someone give up a pawn on purpose in the opening?",
+  "evidence": [
+   "sacrifice a pawn",
+   "gambit: an opening"
+  ],
+  "keywords": [
+   "gambit|develop|goal"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q21",
+  "type": "inferred",
+  "question": "Which opening goes after the f7 square?",
+  "evidence": [
+   "eyes the f7 square",
+   "weak f7 square"
+  ],
+  "keywords": [
+   "italian"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q22",
+  "type": "inferred",
+  "question": "If I touch a piece, do I have to move it?",
+  "evidence": [
+   "must move the first piece touched"
+  ],
+  "keywords": [
+   "must|have to|first piece"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q23",
+  "type": "inferred",
+  "question": "How far can a pawn go on its very first turn?",
+  "evidence": [
+   "advance two squares along the same file",
+   "or two squares from its starting square"
+  ],
+  "keywords": [
+   "two|2"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q24",
+  "type": "inferred",
+  "question": "Do I have to push pawns to control the centre?",
+  "evidence": [
+   "equally valid strategy is to control the centre with pieces"
+  ],
+  "keywords": [
+   "no|not|pieces|valid|fianchetto"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q25",
+  "type": "out_of_scope",
+  "question": "How does the chess clock work?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q26",
+  "type": "out_of_scope",
+  "question": "What is the King's Indian Defence?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q27",
+  "type": "out_of_scope",
+  "question": "Who is the current world chess champion?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q28",
+  "type": "out_of_scope",
+  "question": "How is an Elo rating calculated?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q29",
+  "type": "out_of_scope",
+  "question": "What is the fifty-move rule?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q30",
+  "type": "out_of_scope",
+  "question": "What is the threefold repetition rule?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q31",
+  "type": "out_of_scope",
+  "question": "Which Python library is best for building a chess engine?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q32",
+  "type": "out_of_scope",
+  "question": "What is the capital of Australia?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q33",
+  "type": "known",
+  "question": "What is a fork in chess?",
+  "evidence": [
+   "fork: a single piece attacks two or more"
+  ],
+  "keywords": [
+   "two|more",
+   "attack"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q34",
+  "type": "known",
+  "question": "What is a pin?",
+  "evidence": [
+   "pin: a piece is pinned"
+  ],
+  "keywords": [
+   "cannot|can't|should not",
+   "valuable"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q35",
+  "type": "known",
+  "question": "What is a skewer?",
+  "evidence": [
+   "skewer: an attack on a valuable piece"
+  ],
+  "keywords": [
+   "valuable",
+   "behind"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q36",
+  "type": "known",
+  "question": "What does zugzwang mean?",
+  "evidence": [
+   "zugzwang: a position in which"
+  ],
+  "keywords": [
+   "pass|move",
+   "worse"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q37",
+  "type": "known",
+  "question": "What is a discovered attack?",
+  "evidence": [
+   "discovered attack: moving one piece out of the way"
+  ],
+  "keywords": [
+   "out of the way|reveal",
+   "behind"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q38",
+  "type": "known",
+  "question": "What is a passed pawn?",
+  "evidence": [
+   "passed pawn: a pawn with no enemy pawns"
+  ],
+  "keywords": [
+   "no enemy pawn|no enemy pawns",
+   "front|advance"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q39",
+  "type": "known",
+  "question": "What is a fianchetto?",
+  "evidence": [
+   "fianchetto: developing a bishop"
+  ],
+  "keywords": [
+   "bishop",
+   "diagonal"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q40",
+  "type": "known",
+  "question": "What is scholar's mate?",
+  "evidence": [
+   "scholar's mate: a very quick checkmate"
+  ],
+  "keywords": [
+   "checkmate",
+   "f7"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q41",
+  "type": "known",
+  "question": "What is a back rank mate?",
+  "evidence": [
+   "back rank mate: a checkmate"
+  ],
+  "keywords": [
+   "first rank|back rank",
+   "pawns"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q42",
+  "type": "known",
+  "question": "What is the opposition in chess?",
+  "evidence": [
+   "opposition: a king-and-pawn"
+  ],
+  "keywords": [
+   "kings|king",
+   "face|facing"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q43",
+  "type": "known",
+  "question": "What is a tempo?",
+  "evidence": [
+   "tempo: a unit of time"
+  ],
+  "keywords": [
+   "move",
+   "time"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q44",
+  "type": "known",
+  "question": "What is a hanging piece?",
+  "evidence": [
+   "hanging piece: a piece that is attacked"
+  ],
+  "keywords": [
+   "attacked",
+   "not defended|undefended"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q45",
+  "type": "known",
+  "question": "How many points is a queen worth?",
+  "evidence": [
+   "a rook 5 and a queen 9"
+  ],
+  "keywords": [
+   "9"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q46",
+  "type": "known",
+  "question": "What do the letters K, Q, R, B and N mean when writing moves?",
+  "evidence": [
+   "k for king, q for queen"
+  ],
+  "keywords": [
+   "king",
+   "queen|knight"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q47",
+  "type": "known",
+  "question": "How is castling written in chess notation?",
+  "evidence": [
+   "o-o and o-o-o mean castling"
+  ],
+  "keywords": [
+   "o-o"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q48",
+  "type": "known",
+  "question": "What is kingside castling?",
+  "evidence": [
+   "kingside castling: castling with the rook on the h-file"
+  ],
+  "keywords": [
+   "h-file|short"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q49",
+  "type": "known",
+  "question": "Can a game end in a draw if both players agree?",
+  "evidence": [
+   "both players agree to a draw"
+  ],
+  "keywords": [
+   "agree|yes"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q50",
+  "type": "inferred",
+  "question": "Which piece is allowed to hop over other pieces?",
+  "evidence": [
+   "the only piece that can jump over other pieces"
+  ],
+  "keywords": [
+   "knight"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q51",
+  "type": "inferred",
+  "question": "Does a bishop ever change the colour of its squares?",
+  "evidence": [
+   "always stays on squares of the colour it started on"
+  ],
+  "keywords": [
+   "colour|color",
+   "same|stay|never"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q52",
+  "type": "inferred",
+  "question": "What can I do when my king is attacked?",
+  "evidence": [
+   "by moving the king, blocking the attack or capturing the attacking piece"
+  ],
+  "keywords": [
+   "move|moving",
+   "block|capture"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q53",
+  "type": "inferred",
+  "question": "Is it bad to move the same piece twice in the opening?",
+  "evidence": [
+   "avoid moving pieces more than once in the opening",
+   "avoid moving the same piece twice"
+  ],
+  "keywords": [
+   "avoid|bad|waste"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q54",
+  "type": "inferred",
+  "question": "Should I swap pieces when I am winning on material?",
+  "evidence": [
+   "if you are ahead in material, trading pieces usually helps"
+  ],
+  "keywords": [
+   "trad|swap",
+   "ahead"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q55",
+  "type": "inferred",
+  "question": "How can I stop making silly blunders?",
+  "evidence": [
+   "checks, captures and threats",
+   "stops most beginner blunders"
+  ],
+  "keywords": [
+   "check",
+   "capture|threat"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q56",
+  "type": "inferred",
+  "question": "How do I get better at chess?",
+  "evidence": [
+   "to improve at chess, play regularly"
+  ],
+  "keywords": [
+   "play|practi",
+   "puzzle|review"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q57",
+  "type": "inferred",
+  "question": "Where should I put my rooks?",
+  "evidence": [
+   "put rooks on open files",
+   "rooks are strong on open files"
+  ],
+  "keywords": [
+   "open file"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q58",
+  "type": "inferred",
+  "question": "What should my king do in the endgame?",
+  "evidence": [
+   "bring your king towards the centre"
+  ],
+  "keywords": [
+   "centre|center|active"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q59",
+  "type": "inferred",
+  "question": "Can a pawn take a piece directly in front of it?",
+  "evidence": [
+   "captures one square diagonally forward"
+  ],
+  "keywords": [
+   "diagonal"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q60",
+  "type": "overview",
+  "question": "What is chess?",
+  "evidence": [
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "two-player|two player",
+   "board"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q61",
+  "type": "overview",
+  "question": "Tell me about chess",
+  "evidence": [
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "two-player|two player",
+   "board"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q62",
+  "type": "overview",
+  "question": "Explain chess to me",
+  "evidence": [
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "two-player|two player",
+   "checkmate|board"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q63",
+  "type": "overview",
+  "question": "What is the game of chess?",
+  "evidence": [
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "two-player|two player",
+   "board"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q64",
+  "type": "overview",
+  "question": "Teach me chess",
+  "evidence": [
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "two-player|two player",
+   "board"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q65",
+  "type": "overview",
+  "question": "How do I play chess?",
+  "evidence": [
+   "to play chess, set up the board",
+   "each player starts with 16 pieces",
+   "the goal of chess is to checkmate",
+   "a pawn moves forward one square",
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "piece",
+   "checkmate"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q66",
+  "type": "overview",
+  "question": "What are the rules of chess?",
+  "evidence": [
+   "to play chess, set up the board",
+   "each player starts with 16 pieces",
+   "the goal of chess is to checkmate",
+   "a pawn moves forward one square",
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "piece",
+   "checkmate"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "Q67",
+  "type": "overview",
+  "question": "I'm new to chess, where do I start?",
+  "evidence": [
+   "to play chess, set up the board",
+   "each player starts with 16 pieces",
+   "the goal of chess is to checkmate",
+   "a pawn moves forward one square",
+   "chess is a two-player strategy board game"
+  ],
+  "keywords": [
+   "piece|board",
+   "checkmate|goal"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "Q68",
+  "type": "out_of_scope",
+  "question": "Who invented chess?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q69",
+  "type": "out_of_scope",
+  "question": "What is the Najdorf Variation?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q70",
+  "type": "out_of_scope",
+  "question": "How are chess tournaments organised?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q71",
+  "type": "out_of_scope",
+  "question": "What is blitz chess?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q72",
+  "type": "out_of_scope",
+  "question": "How do chess engines like Stockfish work?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q73",
+  "type": "out_of_scope",
+  "question": "Who was Bobby Fischer?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q74",
+  "type": "out_of_scope",
+  "question": "What does the Caro-Kann Defence do?",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ },
+ {
+  "id": "Q75",
+  "type": "out_of_scope",
+  "question": "What is the weather in Paris today?",
+  "evidence": [],
+  "keywords": [],
+  "split": "test"
+ },
+ {
+  "id": "Q76",
+  "type": "out_of_scope",
+  "question": "Write me a poem about the sea",
+  "evidence": [],
+  "keywords": [],
+  "split": "dev"
+ }
+]

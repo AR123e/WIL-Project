@@ -1,0 +1,38 @@
+id,type,split,question,top1_chunk,routed,best_bm25,best_char_sim,oov_ratio,evidence_chunks,hit_at_1,hit_at_3,rr,ndcg_at_3,unanswered,decline_reason
+Q02,known,test,How does a rook move?,fide_017,,3.28,0.37,0.0,fide_017;overview_010,True,True,1.0,0.6131471927654584,False,
+Q04,known,test,What is en passant?,overview_019,,8.21,0.42,0.0,fide_024;fide_045;overview_005;overview_019,True,True,1.0,1.0,False,
+Q06,known,test,What is stalemate?,fide_043,,4.08,0.44,0.0,fide_038;fide_043;overview_017;strategy_005,True,True,1.0,1.0,False,
+Q08,known,test,When do I lose the right to castle?,fide_028,,5.99,0.33,0.0,fide_028;overview_018,True,True,1.0,0.6131471927654584,False,
+Q10,known,test,Who makes the first move in chess?,fide_002,,6.94,0.4,0.0,fide_002;overview_007,True,True,1.0,0.6131471927654584,False,
+Q12,known,test,What is a gambit?,terms_009,,4.31,0.34,0.0,terms_009;wikibooks_002,True,True,1.0,1.0,False,
+Q14,inferred,test,Why is controlling the centre important?,wikibooks_004,,7.31,0.36,0.0,wikibooks_004,True,True,1.0,1.0,False,
+Q16,inferred,test,Am I allowed to capture the enemy king?,overview_019,,5.65,0.32,0.2,fide_005,False,True,0.3333333333333333,0.5,False,
+Q18,inferred,test,What should I do with my knights and bishops at the start of the game?,overview_007,,6.11,0.39,0.0,strategy_001;wikibooks_003,False,False,0.0,0.0,False,
+Q20,inferred,test,Why would someone give up a pawn on purpose in the opening?,terms_010,,9.51,0.36,0.2,terms_009;wikibooks_002,False,True,0.5,0.38685280723454163,False,
+Q22,inferred,test,"If I touch a piece, do I have to move it?",fide_035,,8.47,0.53,0.0,fide_035,True,True,1.0,1.0,False,
+Q24,inferred,test,Do I have to push pawns to control the centre?,wikibooks_004,,7.31,0.37,0.0,wikibooks_006,False,True,0.3333333333333333,0.5,False,
+Q26,out_of_scope,test,What is the King's Indian Defence?,wikibooks_005,,4.24,0.2,0.25,,,,,,False,
+Q28,out_of_scope,test,How is an Elo rating calculated?,terms_019,,0.0,0.1,1.0,,,,,,True,low_retrieval_confidence
+Q30,out_of_scope,test,What is the threefold repetition rule?,overview_003,,4.45,0.18,0.75,,,,,,True,unknown_terms
+Q32,out_of_scope,test,What is the capital of Australia?,wikibooks_011,,0.0,0.15,1.0,,,,,,True,low_retrieval_confidence
+Q34,known,test,What is a pin?,terms_004,,5.21,0.31,0.0,terms_004,True,True,1.0,1.0,False,
+Q36,known,test,What does zugzwang mean?,terms_008,,4.42,0.34,0.0,terms_008,True,True,1.0,1.0,False,
+Q38,known,test,What is a passed pawn?,terms_015,,6.41,0.43,0.0,terms_015,True,True,1.0,1.0,False,
+Q40,known,test,What is scholar's mate?,terms_020,,8.35,0.42,0.0,terms_020,True,True,1.0,1.0,False,
+Q42,known,test,What is the opposition in chess?,terms_014,,4.27,0.24,0.0,terms_014,True,True,1.0,1.0,False,
+Q44,known,test,What is a hanging piece?,terms_024,,6.63,0.42,0.0,terms_024,True,True,1.0,1.0,False,
+Q46,known,test,"What do the letters K, Q, R, B and N mean when writing moves?",overview_021,,21.35,0.48,0.111,overview_021,True,True,1.0,1.0,False,
+Q48,known,test,What is kingside castling?,terms_029,,8.04,0.58,0.0,terms_029,True,True,1.0,1.0,False,
+Q51,inferred,test,Does a bishop ever change the colour of its squares?,overview_011,,6.03,0.39,0.4,overview_011,True,True,1.0,1.0,False,
+Q53,inferred,test,Is it bad to move the same piece twice in the opening?,strategy_001,,8.48,0.3,0.167,strategy_001;wikibooks_003,True,True,1.0,0.6131471927654584,False,
+Q55,inferred,test,How can I stop making silly blunders?,terms_023,,7.29,0.31,0.25,strategy_002,False,True,0.5,0.6309297535714575,False,
+Q57,inferred,test,Where should I put my rooks?,strategy_003,,5.08,0.2,0.0,strategy_003;terms_018,True,True,1.0,0.6131471927654584,False,
+Q59,inferred,test,Can a pawn take a piece directly in front of it?,fide_023,,6.43,0.31,0.2,overview_013,False,False,0.0,0.0,False,
+Q61,overview,test,Tell me about chess,overview_001,intro,0.0,0.0,0.0,overview_001,True,True,1.0,1.0,False,
+Q63,overview,test,What is the game of chess?,overview_001,intro,1.29,0.15,0.0,overview_001,True,True,1.0,1.0,False,
+Q65,overview,test,How do I play chess?,overview_004,howto,2.45,0.23,0.0,overview_001;overview_002;overview_004;overview_007;overview_013,True,True,1.0,0.7039180890341347,False,
+Q67,overview,test,"I'm new to chess, where do I start?",overview_004,howto,3.73,0.25,0.333,overview_001;overview_002;overview_004;overview_007;overview_013,True,True,1.0,0.7039180890341347,False,
+Q69,out_of_scope,test,What is the Najdorf Variation?,terms_005,,0.0,0.08,1.0,,,,,,True,low_retrieval_confidence
+Q71,out_of_scope,test,What is blitz chess?,fide_009,,0.0,0.09,1.0,,,,,,True,low_retrieval_confidence
+Q73,out_of_scope,test,Who was Bobby Fischer?,terms_006,,0.0,0.09,1.0,,,,,,True,low_retrieval_confidence
+Q75,out_of_scope,test,What is the weather in Paris today?,wikibooks_001,,5.15,0.26,0.667,,,,,,True,unknown_terms

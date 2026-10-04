@@ -1,0 +1,40 @@
+id,type,split,question,top1_chunk,routed,best_bm25,best_char_sim,oov_ratio,evidence_chunks,hit_at_1,hit_at_3,rr,ndcg_at_3,unanswered,decline_reason
+Q01,known,dev,How does the bishop move?,overview_011,,4.08,0.45,0.0,fide_016;overview_011,True,True,1.0,1.0,False,
+Q03,known,dev,How does the knight move?,overview_012,,4.06,0.44,0.0,fide_020;overview_012,True,True,1.0,0.9197207891481876,False,
+Q05,known,dev,What happens when a pawn reaches the last rank?,fide_046,,7.8,0.24,0.0,fide_025;fide_046;overview_005;overview_013,True,True,1.0,0.7039180890341347,False,
+Q07,known,dev,How many pieces does each player start with?,overview_007,,7.88,0.37,0.0,fide_009;overview_007,True,True,1.0,0.6131471927654584,False,
+Q09,known,dev,What is the objective of chess?,fide_004,,4.0,0.52,0.0,fide_004;overview_002,True,True,1.0,0.6131471927654584,False,
+Q11,known,dev,What is the Sicilian Defence?,wikibooks_010,,6.97,0.34,0.0,wikibooks_010,True,True,1.0,1.0,False,
+Q13,inferred,dev,Why shouldn't I bring my queen out early?,strategy_001,,10.11,0.38,0.333,strategy_001;wikibooks_003,True,True,1.0,0.6131471927654584,False,
+Q15,inferred,dev,Can my bishop jump over another piece?,overview_012,,9.32,0.34,0.0,fide_019;overview_012,True,True,1.0,1.0,False,
+Q17,inferred,dev,Can I make a move that leaves my own king in danger?,terms_015,,7.08,0.28,0.0,fide_031;overview_015,False,True,0.5,0.38685280723454163,False,
+Q19,inferred,dev,Does the game end if neither side can possibly checkmate?,fide_007,,12.56,0.56,0.0,fide_007;fide_039;overview_017,True,True,1.0,0.46927872602275644,False,
+Q21,inferred,dev,Which opening goes after the f7 square?,fide_045,,5.65,0.25,0.2,terms_020;wikibooks_008,False,True,0.5,0.38685280723454163,False,
+Q23,inferred,dev,How far can a pawn go on its very first turn?,overview_004,,5.89,0.2,0.0,fide_022;overview_013,False,False,0.0,0.0,False,
+Q25,out_of_scope,dev,How does the chess clock work?,terms_028,,4.28,0.16,0.5,,,,,,True,unknown_terms
+Q27,out_of_scope,dev,Who is the current world chess champion?,overview_003,,5.05,0.24,0.667,,,,,,True,unknown_terms
+Q29,out_of_scope,dev,What is the fifty-move rule?,overview_003,,4.45,0.2,0.5,,,,,,True,unknown_terms
+Q31,out_of_scope,dev,Which Python library is best for building a chess engine?,fide_029,,0.0,0.07,1.0,,,,,,True,low_retrieval_confidence
+Q33,known,dev,What is a fork in chess?,terms_003,,5.82,0.46,0.0,terms_003,True,True,1.0,1.0,False,
+Q35,known,dev,What is a skewer?,terms_005,,5.31,0.46,0.0,terms_005,True,True,1.0,1.0,False,
+Q37,known,dev,What is a discovered attack?,terms_006,,8.77,0.67,0.0,terms_006,True,True,1.0,1.0,False,
+Q39,known,dev,What is a fianchetto?,terms_013,,4.12,0.45,0.0,terms_013,True,True,1.0,1.0,False,
+Q41,known,dev,What is a back rank mate?,terms_019,,11.8,0.5,0.0,terms_019,True,True,1.0,1.0,False,
+Q43,known,dev,What is a tempo?,terms_011,,7.26,0.52,0.0,terms_011,True,True,1.0,1.0,False,
+Q45,known,dev,How many points is a queen worth?,terms_022,,11.01,0.47,0.0,overview_014,False,True,0.5,0.6309297535714575,False,
+Q47,known,dev,How is castling written in chess notation?,overview_021,,8.97,0.51,0.0,overview_021,True,True,1.0,1.0,False,
+Q49,known,dev,Can a game end in a draw if both players agree?,overview_017,,13.39,0.49,0.0,overview_017,True,True,1.0,1.0,False,
+Q50,inferred,dev,Which piece is allowed to hop over other pieces?,overview_012,,9.27,0.31,0.2,overview_012,True,True,1.0,1.0,False,
+Q52,inferred,dev,What can I do when my king is attacked?,overview_015,,3.35,0.46,0.0,overview_015,True,True,1.0,1.0,False,
+Q54,inferred,dev,Should I swap pieces when I am winning on material?,terms_025,,5.68,0.36,0.4,strategy_004,False,True,0.3333333333333333,0.5,False,
+Q56,inferred,dev,How do I get better at chess?,terms_010,,5.62,0.23,0.0,strategy_007,False,True,0.5,0.6309297535714575,False,
+Q58,inferred,dev,What should my king do in the endgame?,strategy_005,,4.62,0.38,0.0,strategy_005,True,True,1.0,1.0,False,
+Q60,overview,dev,What is chess?,overview_001,intro,0.0,0.0,0.0,overview_001,True,True,1.0,1.0,False,
+Q62,overview,dev,Explain chess to me,overview_001,intro,0.0,0.0,0.0,overview_001,True,True,1.0,1.0,False,
+Q64,overview,dev,Teach me chess,overview_001,intro,0.0,0.0,1.0,overview_001,True,True,1.0,1.0,False,
+Q66,overview,dev,What are the rules of chess?,overview_004,howto,4.45,0.21,0.5,overview_001;overview_002;overview_004;overview_007;overview_013,True,True,1.0,0.46927872602275644,False,
+Q68,out_of_scope,dev,Who invented chess?,fide_029,,0.0,0.17,1.0,,,,,,True,low_retrieval_confidence
+Q70,out_of_scope,dev,How are chess tournaments organised?,overview_003,,5.05,0.35,0.5,,,,,,True,unknown_terms
+Q72,out_of_scope,dev,How do chess engines like Stockfish work?,terms_028,,4.28,0.19,0.5,,,,,,True,unknown_terms
+Q74,out_of_scope,dev,What does the Caro-Kann Defence do?,wikibooks_005,,3.26,0.19,0.667,,,,,,True,unknown_terms
+Q76,out_of_scope,dev,Write me a poem about the sea,terms_030,,0.0,0.19,1.0,,,,,,True,low_retrieval_confidence
