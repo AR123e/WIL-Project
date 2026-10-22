@@ -2,6 +2,3 @@ rank_bm25
 requests
 streamlit
 pandas
-numpy
-nltk
-scikit-learn

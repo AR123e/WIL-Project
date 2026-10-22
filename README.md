@@ -1,160 +1,75 @@
-# ♟️ Chess Mentor – RAG for Beginner Chess Learners
+# Chess Mentor – RAG for beginner chess learners
 
-A simple Retrieval-Augmented Generation (RAG) app that helps beginners learn chess.
+**Domain / stakeholder:** beginner chess players (and coaches) who need rule and opening answers they can trust.
+**Value claim:** answers are grounded in two authoritative sources, cite them, and the system declines rather than guesses.
+**Stack:** BM25 (rank_bm25) → Ollama `llama3.1` → Streamlit. No paid APIs.
 
-The system:
-- Retrieves relevant info from a small chess knowledge base
-- Uses a local LLM (Ollama - Llama 3.1) to generate answers
-- Shows sources (chunks) and avoids guessing ("I don't know" when unsure)
-
-Everything runs locally — no paid APIs.
-
----
-
-## 👥 Team Members
-
-| Student ID | Name |
-|-----------|------|
-| s4205613 | Alen Regi |
-| s4215559 | Delona Sebastian |
-| s4216144 | Chayanika Bangar |
-| s4219934 | Goutham Thilak |
-| s4186078 | Anmol Kaushil |
-
----
-
-## 🧠 How It Works
-
-User Question  
-↓  
-Retriever (BM25 + n-grams)  
-↓  
-Top relevant chunks  
-↓  
-LLM (Ollama - Llama 3.1)  
-↓  
-Answer + Sources  
-↓  
-Streamlit UI  
-
----
-
-## 📂 Project Structure
-chess-rag/
-│
-├── app.py # Streamlit UI
-├── src/
-│ ├── pipeline.py # Main RAG pipeline
-│ ├── retrieve.py # Retrieval logic (BM25)
-│ ├── generate.py # LLM response (Ollama)
-│ ├── prepare_kb.py # Chunking
-│ ├── evaluate.py # Evaluation
-│
-├── data/
-│ ├── raw/ # Original documents
-│ └── processed/
-│ └── chunks.json # Chunked data
-│
-├── eval/
-│ ├── test_questions.json
-│ └── results.csv
-│
-└── tests/ # Unit tests
-
----
-
-## 🚀 How to Run (Windows & Mac)
-
-### 1. Install dependencies
-
-**Windows**
-py -m pip install -r requirements.txt
-
-**Mac / Linux**
-
----
-
-### 2. Prepare knowledge base
-py src/prepare_kb.py # Windows
-python3 src/prepare_kb.py # Mac
-
-
----
-
-### 3. Start Ollama (LLM)
-
-First install Ollama: https://ollama.com/
-
-Then run:
+## Setup (macOS)
+```bash
+cd chess_rag
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+brew install ollama            # skip if installed
+ollama serve &                 # leave running
 ollama pull llama3.1
-#### ▶️ Run model
-ollama run llama3.1
+```
 
-#### ⚠️ If GPU error (Windows fix)
-
-$env:OLLAMA_NO_GPU=1
-ollama run llama3.1
-
-
-(For Mac, GPU usually works automatically)
-
----
-
-### 4. Run the app
-py -m streamlit run app.py # Windows
-python3 -m streamlit run app.py # Mac
+## Setup (Windows)
+Use PowerShell (or Windows Terminal).
+```powershell
+cd chess_rag
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+winget install Ollama.Ollama   # or download the installer from https://ollama.com/download
+ollama pull llama3.1
+```
 
 
-Open: http://localhost:8501
+## Run
+```bash
+python -m src.prepare_kb                          # build data/processed/chunks.json
+python -m src.calibrate                           # inspect score thresholds (optional)
+python -m src.evaluate --stage retrieval          # fast, no LLM
+python -m src.evaluate --stage full --baseline    # full framework + no-RAG baseline
+streamlit run app.py                              # demo app
+```
 
----
+## Layout
+```
+data/raw/            fide_basic_rules.md, wikibooks_opening_principles.md
+data/processed/      chunks.json (generated)
+eval/                test_questions.json (32 Qs: 12 known, 12 inferred, 8 out_of_scope), results_*.csv
+src/config.py        all settings (model, k, thresholds)
+src/prepare_kb.py    rule-aware chunking (one chunk per FIDE rule / glossary term / paragraph)
+src/retrieve.py      BM25 + stop-words + stemming + coverage signal
+src/generate.py      Ollama call, cited answers, no-RAG baseline, LLM faithfulness judge
+src/pipeline.py      retrieve -> confidence gate -> generate
+src/evaluate.py      evaluation framework
+app.py               Streamlit UI + evaluation dashboard
+```
 
-## 📊 Evaluation
+## Evaluation framework
+| Dimension | Metric |
+|---|---|
+| Retrieval | hit@1, hit@3, MRR (relevant = chunk contains an evidence phrase, so results survive re-chunking) |
+| Effectiveness | % unanswered, correct-refusal rate (out-of-scope), false-refusal rate (in-scope) |
+| Correctness | gold-keyword coverage; RAG vs no-retrieval baseline |
+| Faithfulness | LLM-as-judge: every claim supported by retrieved context |
+| Source attribution | citation present / valid / correct |
+| Usability | Flesch reading ease, latency |
 
-We evaluate the system using:
+## Baseline retrieval results (BM25, current KB)
+| | hit@1 | hit@3 | MRR |
+|---|---|---|---|
+| known (12) | 66.7% | 83.3% | 0.74 |
+| inferred (12) | 33.3% | 83.3% | 0.54 |
 
-- Hit@1 (top result correct)
-- Hit@3 (top 3 results contain answer)
-- Unanswered rate (confidence-based)
+Unanswered: 21.9% overall; 0% false refusals; 87.5% correct refusals (miss: "King's Indian Defence").
 
-Run:
-python src/evaluate.py
-
-Results:eval/results.csv\
-
----
-
-## ⚠️ Limitations
-
-- Uses BM25 (keyword-based), not semantic search
-- Small knowledge base → limited answers
-- Sometimes returns "I don't know"
-- LLM (Ollama) may fail if not running
-
----
-
-## 🔮 Future Improvements
-
-- Add embeddings (vector database)
-- Improve chunking strategy
-- Expand knowledge base
-- Improve answer quality
-
----
-
-## 🎯 Key Features
-
-- Runs fully locally (no API cost)
-- Shows retrieved sources (transparent answers)
-- Avoids hallucination
-- Interactive UI
-
----
-
-## 📌 Conclusion
-
-This project demonstrates a simple but complete RAG system:
-
-- Retrieval (BM25)
-- Generation (LLM)
-- Evaluation (metrics + testing)
+## Known limitations / next sprints
+- BM25 is lexical: inferred (paraphrased) questions rank lower. Next: add embedding retrieval (`nomic-embed-text` via Ollama) + hybrid fusion and compare in the same framework.
+- MIN_SCORE was tuned on the same questions used to evaluate; split into dev/test sets before reporting final numbers.
+- llama3.1 judging its own answers is biased; spot-check ~10 judgements by hand and report agreement.
+- Keyword correctness is crude; add a manual correctness label (0/1/2) for a sample.
+- Small KB (60 chunks, 2 docs) – by design; FIDE clock/arbiter articles are out of scope and used as refusal tests.

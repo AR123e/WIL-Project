@@ -1,14 +1,12 @@
 """
-Generation component: builds the grounded prompt and calls the LLM. Answers must cite the chunk ids they used,
-so source attribution can be checked in code and evaluated.
+Generation component: calls a locally running Ollama model with the retrieved chunks as context.
+Answers must cite the chunk ids they used, so source attribution can be evaluated.
 """
-import re
+import requests
 
-from src.config import MODEL, JUDGE_MODEL
-from src.llm import OllamaLLM
+from src.config import OLLAMA_URL, MODEL, JUDGE_MODEL
 
 DECLINE = "I don't know based on the available information."
-CITE = re.compile(r"\[([a-z]+_\d{3})\]")
 
 SYSTEM_PROMPT = f"""You are a friendly chess tutor for complete beginners.
 
@@ -16,21 +14,8 @@ Rules:
 1. Answer using ONLY the context below. Do not use outside knowledge.
 2. If the context only partly answers the question, explain the part it covers.
 3. After each fact, cite the chunk id it came from in square brackets, e.g. [fide_016].
-4. If the question asks what chess is or how to get started, give a short, friendly summary of the context.
-5. If the context does not contain the answer, reply exactly: {DECLINE}
-6. Keep it short (max 4 sentences) and use simple words."""
-
-_llm = OllamaLLM()
-
-
-def set_llm(llm):
-    """Swap the LLM client (used by tests and notebooks)."""
-    global _llm
-    _llm = llm
-
-
-def get_llm():
-    return _llm
+4. If the context does not contain the answer, reply exactly: {DECLINE}
+5. Keep it short (max 4 sentences) and use simple words."""
 
 
 def build_prompt(question, chunks):
@@ -38,21 +23,24 @@ def build_prompt(question, chunks):
     return f"{SYSTEM_PROMPT}\n\nContext:\n{context}\n\nQuestion: {question}\nAnswer:"
 
 
+def _call(prompt, model=MODEL, temperature=0.0, timeout=120):
+    r = requests.post(
+        OLLAMA_URL,
+        json={"model": model, "prompt": prompt, "stream": False, "options": {"temperature": temperature}},
+        timeout=timeout,
+    )
+    r.raise_for_status()
+    return r.json()["response"].strip()
+
+
 def generate_answer(question, chunks):
-    return _llm.generate(build_prompt(question, chunks), model=MODEL)
+    return _call(build_prompt(question, chunks))
 
 
 def generate_baseline(question):
     """No-retrieval baseline: the same LLM answering from its own knowledge (for the RAG-vs-no-RAG comparison)."""
-    return _llm.generate("You are a chess tutor for beginners. Answer in at most 4 simple sentences.\n\nQuestion: "
-                         + question + "\nAnswer:", model=MODEL)
-
-
-def split_citations(answer, chunks):
-    """Return (cited_ids_that_were_retrieved, invented_ids_that_were_not)."""
-    cited = CITE.findall(answer)
-    retrieved = {c["chunk_id"] for c in chunks}
-    return [c for c in dict.fromkeys(cited) if c in retrieved], [c for c in dict.fromkeys(cited) if c not in retrieved]
+    return _call("You are a chess tutor for beginners. Answer in at most 4 simple sentences.\n\nQuestion: "
+                 + question + "\nAnswer:")
 
 
 def judge_faithfulness(answer, chunks):
@@ -64,4 +52,5 @@ def judge_faithfulness(answer, chunks):
         "implied by the CONTEXT, otherwise UNSUPPORTED.\n\n"
         f"CONTEXT:\n{context}\n\nANSWER:\n{answer}\n\nVerdict:"
     )
-    return _llm.generate(prompt, model=JUDGE_MODEL).upper().startswith("SUPPORTED")
+    verdict = _call(prompt, model=JUDGE_MODEL).upper()
+    return verdict.startswith("SUPPORTED")

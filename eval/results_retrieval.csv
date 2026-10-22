@@ -1,0 +1,33 @@
+id,type,question,top1_score,top1_chunk,evidence_chunks,hit_at_1,hit_at_3,rr,unanswered
+Q01,known,How does the bishop move?,2.39,fide_048,fide_016,False,True,0.5,False
+Q02,known,How does a rook move?,2.52,fide_027,fide_017,False,True,0.3333333333333333,False
+Q03,known,How does the knight move?,2.58,fide_048,fide_020,False,False,0.0,False
+Q04,known,What is en passant?,6.89,fide_045,fide_024;fide_045,True,True,1.0,False
+Q05,known,What happens when a pawn reaches the last rank?,7.38,fide_046,fide_025;fide_046,True,True,1.0,False
+Q06,known,What is stalemate?,3.97,fide_043,fide_038;fide_043,True,True,1.0,False
+Q07,known,How many pieces does each player start with?,4.03,fide_010,fide_009,False,False,0.0,False
+Q08,known,When do I lose the right to castle?,7.61,fide_028,fide_028,True,True,1.0,False
+Q09,known,What is the objective of chess?,3.95,fide_004,fide_004,True,True,1.0,False
+Q10,known,Who makes the first move in chess?,7.13,fide_002,fide_002,True,True,1.0,False
+Q11,known,What is the Sicilian Defence?,5.81,wikibooks_010,wikibooks_010,True,True,1.0,False
+Q12,known,What is a gambit?,3.51,wikibooks_002,wikibooks_002,True,True,1.0,False
+Q13,inferred,Why shouldn't I bring my queen out early?,3.04,wikibooks_008,wikibooks_003,False,False,0.0,False
+Q14,inferred,Why is controlling the centre important?,7.17,wikibooks_005,wikibooks_004,False,True,0.3333333333333333,False
+Q15,inferred,Can my bishop jump over another piece?,6.22,fide_019,fide_019,True,True,1.0,False
+Q16,inferred,Am I allowed to capture the enemy king?,3.81,fide_024,fide_005,False,True,0.5,False
+Q17,inferred,Can I make a move that leaves my own king in danger?,6.8,fide_005,fide_031,False,False,0.0,False
+Q18,inferred,What should I do with my knights and bishops at the start of the game?,4.97,fide_048,wikibooks_003,False,True,0.5,False
+Q19,inferred,Does the game end if neither side can possibly checkmate?,11.54,fide_047,fide_039,False,True,0.3333333333333333,False
+Q20,inferred,Why would someone give up a pawn on purpose in the opening?,4.22,wikibooks_011,wikibooks_002,False,True,0.5,False
+Q21,inferred,Which opening goes after the f7 square?,5.06,wikibooks_008,wikibooks_008,True,True,1.0,False
+Q22,inferred,"If I touch a piece, do I have to move it?",5.9,fide_035,fide_035,True,True,1.0,False
+Q23,inferred,How far can a pawn go on its very first turn?,6.09,fide_046,fide_022,False,True,0.3333333333333333,False
+Q24,inferred,Do I have to push pawns to control the centre?,7.57,wikibooks_006,wikibooks_006,True,True,1.0,False
+Q25,out_of_scope,How does the chess clock work?,0.0,fide_001,,,,,True
+Q26,out_of_scope,What is the King's Indian Defence?,3.2,wikibooks_010,,,,,False
+Q27,out_of_scope,Who is the current world chess champion?,0.0,fide_001,,,,,True
+Q28,out_of_scope,How is an Elo rating calculated?,0.0,fide_001,,,,,True
+Q29,out_of_scope,What is the fifty-move rule?,0.33,fide_043,,,,,True
+Q30,out_of_scope,What is the threefold repetition rule?,0.0,fide_001,,,,,True
+Q31,out_of_scope,Which Python library is best for building a chess engine?,0.0,fide_001,,,,,True
+Q32,out_of_scope,What is the capital of Australia?,0.0,fide_001,,,,,True
