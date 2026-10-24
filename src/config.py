@@ -16,3 +16,4 @@ MIN_SCORE = 2.0             # BM25 top-1 score below this => decline (see src/ca
 MIN_COVERAGE = 0.3          # optional second gate; calibration showed it does not separate in/out-of-scope, so off
 BM25_K1=0.6
 BM25_B=0.75
+MAX_QUESTIONS=5

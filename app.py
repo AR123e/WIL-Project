@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import streamlit as st
 
-from src.config import EVAL_DIR, MIN_SCORE
+from src.config import EVAL_DIR, MIN_SCORE, MAX_QUESTIONS
 from src.pipeline import ChessRAG
 
 st.set_page_config(page_title="Chess Mentor", page_icon="♟️", layout="wide")
@@ -29,17 +29,25 @@ with tab_ask:
             st.session_state["q"] = ex
     q = st.text_input("Your question", key="q", placeholder="e.g. Can I castle out of check?")
     if q:
-        try:
-            with st.spinner("Thinking..."):
-                res = rag.ask(q)
-        except Exception as e:
-            st.error(f"Could not reach Ollama. Is it running (`ollama serve`) with llama3.1 pulled? ({e})")
-            st.stop()
-        if res["declined"]:
-            st.warning(res["answer"])
-        else:
-            st.success(res["answer"])
-        c1, c2 = st.columns(2)
+        asked=st.session_state.setdefault("asked",[])
+        if q not in asked:
+            if len(asked)>=MAX_QUESTIONS:
+                st.warning(f"ypu've reached the limit of {MAX_QUESTIONS} questions for this session. Refresh the page to start a new session.")
+                st.stop()
+            asked.append(q)
+            st.caption(f"Questioned used :{len(asked)}/{MAX_QUESTIONS}")
+            
+            try:
+                with st.spinner("Thinking..."):
+                    res = rag.ask(q)
+            except Exception as e:
+                st.error(f"Could not reach Ollama. Is it running (`ollama serve`) with llama3.1 pulled? ({e})")
+                st.stop()
+            if res["declined"]:
+                st.warning(res["answer"])
+            else:
+                st.success(res["answer"])
+            c1, c2 = st.columns(2)
         c1.metric("Retrieval confidence (BM25)", f"{res['confidence']:.2f}", help=f"Declines below {MIN_SCORE}")
         c2.metric("Latency", f"{res['latency']:.1f}s")
         with st.expander("Sources used"):
