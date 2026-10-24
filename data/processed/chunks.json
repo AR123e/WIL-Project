@@ -418,5 +418,411 @@
     "doc_title": "Chess Opening Principles (Wikibooks)",
     "section": "A Few Common Openings (illustrative, not exhaustive)",
     "text": "**Queen's Gambit**: 1.d4 d5 2.c4. White offers a wing pawn to gain faster development and central influence. Despite the name, white does not usually end up a pawn down for long if Black accepts it (2...dxc4)."
+  },
+  {
+    "chunk_id": "overview_001",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "What is chess?",
+    "text": "Chess is a two-player strategy board game played on a square board with 64 squares. One player controls the white pieces and the other controls the black pieces, and the players take turns making one move at a time. There is no luck and no hidden information in chess: both players can see the whole board, so the result depends on planning and skill."
+  },
+  {
+    "chunk_id": "overview_002",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "What is chess?",
+    "text": "The goal of chess is to checkmate the opponent's king, which means attacking it in a way that it cannot escape. A game of chess can also end in a draw, where neither player wins."
+  },
+  {
+    "chunk_id": "overview_003",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "What is chess?",
+    "text": "Chess is played all over the world at home, in clubs, online and in tournaments. The official rules of chess are maintained by FIDE, the international chess federation."
+  },
+  {
+    "chunk_id": "overview_004",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How to play chess: the quick version",
+    "text": "To play chess, set up the board with each player's 16 pieces and let White move first. The players take turns moving one piece at a time, and each type of piece moves in its own way. You capture an enemy piece by moving onto its square. If your opponent's king is attacked, that is check, and if it cannot escape it is checkmate and you win."
+  },
+  {
+    "chunk_id": "overview_005",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How to play chess: the quick version",
+    "text": "A good way to start is to learn how each piece moves, then learn check and checkmate, then the special moves of castling, en passant and promotion, and finally the opening principles."
+  },
+  {
+    "chunk_id": "overview_006",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "The board and the starting position",
+    "text": "The chessboard has eight rows, called ranks, and eight columns, called files. Together they make 64 squares that alternate between light and dark. The board is placed so that each player has a light square in the right-hand corner closest to them."
+  },
+  {
+    "chunk_id": "overview_007",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "The board and the starting position",
+    "text": "Each player starts with 16 pieces: one king, one queen, two rooks, two bishops, two knights and eight pawns. The pawns stand on the second row from each player and the other pieces stand behind them. The queen starts on a square of her own colour, so the white queen starts on a light square and the black queen on a dark square. White always makes the first move."
+  },
+  {
+    "chunk_id": "overview_008",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "The king moves one square in any direction: forwards, backwards, sideways or diagonally. The king can never move to a square where it would be attacked. It is the most important piece because if it is checkmated the game is lost."
+  },
+  {
+    "chunk_id": "overview_009",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "The queen is the most powerful piece. She moves any number of squares in a straight line along a rank, a file or a diagonal, as long as no piece is in the way."
+  },
+  {
+    "chunk_id": "overview_010",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "A rook moves any number of squares in a straight line along a rank or a file, but not diagonally."
+  },
+  {
+    "chunk_id": "overview_011",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "A bishop moves any number of squares diagonally. Because of this, each bishop always stays on squares of the colour it started on."
+  },
+  {
+    "chunk_id": "overview_012",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "A knight moves in an L-shape: two squares in one direction and then one square to the side. The knight is the only piece that can jump over other pieces."
+  },
+  {
+    "chunk_id": "overview_013",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "How each piece moves",
+    "text": "A pawn moves forward one square, or two squares from its starting square, and it captures one square diagonally forward. Pawns cannot move backwards. A pawn that reaches the far end of the board is promoted, usually to a queen."
+  },
+  {
+    "chunk_id": "overview_014",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "What the pieces are worth",
+    "text": "Beginners use point values as a rough guide to the strength of each piece: a pawn is worth 1 point, a knight 3, a bishop 3, a rook 5 and a queen 9. The king has no point value because losing it ends the game. These numbers are only a guideline, because a strong position can matter more than counting material."
+  },
+  {
+    "chunk_id": "overview_015",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "Check, checkmate and draws",
+    "text": "When a king is under attack it is in check. A player in check must get out of check immediately by moving the king, blocking the attack or capturing the attacking piece. It is illegal to leave your own king in check."
+  },
+  {
+    "chunk_id": "overview_016",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "Check, checkmate and draws",
+    "text": "If a player is in check and has no way to escape, it is checkmate and the game is over. The player who delivered checkmate wins the game of chess."
+  },
+  {
+    "chunk_id": "overview_017",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "Check, checkmate and draws",
+    "text": "A game is a draw if the player to move is not in check but has no legal move; this is called stalemate. A game is also drawn if both players agree to a draw or if neither player can possibly checkmate the other, for example with only the two kings left. A player can also resign, which means giving up and losing the game."
+  },
+  {
+    "chunk_id": "overview_018",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "Castling in plain words",
+    "text": "Castling is a special move that helps keep the king safe. The king moves two squares towards a rook and that rook jumps to the other side of the king. You can only castle if the king and that rook have not moved before, there are no pieces between them, the king is not in check, and the king does not pass through or land on a square that is attacked."
+  },
+  {
+    "chunk_id": "overview_019",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "En passant in plain words",
+    "text": "En passant is a special pawn capture. If a pawn moves two squares forward from its starting square and lands next to an enemy pawn, that enemy pawn may capture it as if it had moved only one square. This must be done immediately on the very next move or the chance is lost."
+  },
+  {
+    "chunk_id": "overview_020",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "The three phases of a chess game",
+    "text": "A game of chess usually has three phases. The opening is the first moves, when players bring their pieces into play and fight for the centre. The middlegame is when most of the tactics and attacks happen. The endgame is when few pieces are left and the kings become active and pawns try to promote."
+  },
+  {
+    "chunk_id": "overview_021",
+    "doc_id": "overview",
+    "doc_title": "Chess for Absolute Beginners (Project-authored overview)",
+    "section": "Reading chess notation",
+    "text": "Chess moves are written in algebraic notation. The files are labelled a to h from left to right and the ranks are numbered 1 to 8 from White's side, so every square has a name such as e4. A move is written with a letter for the piece: K for king, Q for queen, R for rook, B for bishop and N for knight. Pawn moves have no letter. An x means a capture, a plus sign means check, a hash sign means checkmate, and O-O and O-O-O mean castling on the kingside and the queenside."
+  },
+  {
+    "chunk_id": "strategy_001",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "Opening principles in one list",
+    "text": "In the opening, try to do four things. Control the centre with pawns or pieces, develop your knights and bishops quickly, castle early so your king is safe and your rook joins the game, and avoid moving the same piece twice without a good reason. Also avoid bringing your queen out too early, because enemy pieces can attack her and gain time."
+  },
+  {
+    "chunk_id": "strategy_002",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "Think before every move",
+    "text": "Before every move, check three things. First, what is my opponent threatening with their last move? Second, are any of my pieces undefended? Third, can I check, capture or threaten something? Looking at checks, captures and threats in this order stops most beginner blunders."
+  },
+  {
+    "chunk_id": "strategy_003",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "Middlegame ideas",
+    "text": "In the middlegame, improve your least active piece, put rooks on open files, and keep your king safe. Look for tactics such as forks, pins and skewers, and also check whether your opponent has one. Try to avoid doubled and isolated pawns because they are hard to defend."
+  },
+  {
+    "chunk_id": "strategy_004",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "When to trade pieces",
+    "text": "If you are ahead in material, trading pieces usually helps you because the extra material counts for more when the board is emptier. If you are behind, avoid trades and look for complications. Never trade without checking that the trade does not leave one of your pieces unprotected."
+  },
+  {
+    "chunk_id": "strategy_005",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "Endgame basics",
+    "text": "In the endgame the king becomes a strong piece, so bring your king towards the centre. Create a passed pawn and push it. A good rule is to place your rook behind a passed pawn. When you are ahead, be careful not to cause stalemate by leaving the enemy king with no legal move, because that is only a draw."
+  },
+  {
+    "chunk_id": "strategy_006",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "Common beginner mistakes",
+    "text": "The most common beginner mistakes are moving too fast, leaving pieces hanging, bringing the queen out early, ignoring the opponent's threats, forgetting to castle, pushing too many pawns, and falling for scholar's mate. Slowing down and checking what the opponent just did fixes most of them."
+  },
+  {
+    "chunk_id": "strategy_007",
+    "doc_id": "strategy",
+    "doc_title": "Basic Chess Strategy for Beginners (project-authored)",
+    "section": "How to improve at chess",
+    "text": "To improve at chess, play regularly, review your games to find your mistakes, solve tactics puzzles every day, and learn the basic endgames. Learn opening principles rather than memorising long lines of moves, because the principles work in every game."
+  },
+  {
+    "chunk_id": "tactics_001",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "tactic: a short, forcing sequence of moves that wins material or gives checkmate, such as a fork, pin or skewer. A tactic is a short-term idea, while a strategy is a long-term plan."
+  },
+  {
+    "chunk_id": "tactics_002",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "strategy: the long-term plan for a game, such as controlling the centre, improving piece positions or creating a weakness in the opponent's position."
+  },
+  {
+    "chunk_id": "tactics_003",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "fork: a single piece attacks two or more enemy pieces at the same time, so the opponent can usually save only one of them. Knights are famous for forks, but queens and pawns can fork too."
+  },
+  {
+    "chunk_id": "tactics_004",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "pin: a piece is pinned when it cannot or should not move because a more valuable piece stands behind it on the same line. In an absolute pin the piece shields the king, so moving it would be illegal. In a relative pin moving it is legal but would lose the more valuable piece."
+  },
+  {
+    "chunk_id": "tactics_005",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "skewer: an attack on a valuable piece that must move away, which exposes a less valuable piece behind it to capture. A skewer is like a pin in reverse."
+  },
+  {
+    "chunk_id": "tactics_006",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "discovered attack: moving one piece out of the way so that another piece behind it attacks something. If the revealed attack is on the enemy king, it is called a discovered check."
+  },
+  {
+    "chunk_id": "tactics_007",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "double check: two pieces give check at the same time. The only way to answer a double check is to move the king."
+  },
+  {
+    "chunk_id": "tactics_008",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "zugzwang: a position in which the player to move would like to pass but cannot, because every legal move makes their position worse. The word is German for compulsion to move, and it is most common in endgames."
+  },
+  {
+    "chunk_id": "tactics_009",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "gambit: an opening in which a player sacrifices a pawn, or sometimes more, to gain faster development or an attack."
+  },
+  {
+    "chunk_id": "tactics_010",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "sacrifice: to give up material on purpose in return for an attack, a better position or checkmate."
+  },
+  {
+    "chunk_id": "tactics_011",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "tempo: a unit of time in chess equal to one move. Gaining a tempo means making progress while forcing the opponent to waste a move, and losing a tempo means wasting a move."
+  },
+  {
+    "chunk_id": "tactics_012",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "development: moving your pieces from their starting squares to active squares where they can control the board."
+  },
+  {
+    "chunk_id": "tactics_013",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "fianchetto: developing a bishop to b2, g2, b7 or g7, usually after moving the knight pawn one square, so the bishop controls the long diagonal."
+  },
+  {
+    "chunk_id": "tactics_014",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "opposition: a king-and-pawn endgame idea in which the two kings face each other with one empty square between them. The player who has to move must step aside, which can let the other king advance."
+  },
+  {
+    "chunk_id": "tactics_015",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "passed pawn: a pawn with no enemy pawns in front of it on its own file or the files next to it, so no enemy pawn can block or capture it as it advances. Passed pawns are very dangerous in the endgame."
+  },
+  {
+    "chunk_id": "tactics_016",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "doubled pawns: two pawns of the same colour on the same file, which is usually a weakness."
+  },
+  {
+    "chunk_id": "tactics_017",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "isolated pawn: a pawn with no friendly pawns on the files next to it, so other pawns cannot defend it."
+  },
+  {
+    "chunk_id": "tactics_018",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "open file: a file with no pawns on it. Rooks are strong on open files."
+  },
+  {
+    "chunk_id": "tactics_019",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "back rank mate: a checkmate on a king that is trapped on its first rank by its own pawns, usually delivered by a rook or queen."
+  },
+  {
+    "chunk_id": "tactics_020",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "scholar's mate: a very quick checkmate in as few as four moves in which the queen and bishop attack the weak f7 square, or f2 for Black. Beginners can avoid it by defending that square."
+  },
+  {
+    "chunk_id": "tactics_021",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "fool's mate: the quickest possible checkmate, in only two moves, which happens only if White plays very weak moves."
+  },
+  {
+    "chunk_id": "tactics_022",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "exchange: trading one piece for another. Winning the exchange means winning a rook, worth 5 points, for a knight or bishop, worth 3 points."
+  },
+  {
+    "chunk_id": "tactics_023",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "blunder: a serious mistake that loses material or the game."
+  },
+  {
+    "chunk_id": "tactics_024",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "hanging piece: a piece that is attacked and not defended, so it can be captured for free."
+  },
+  {
+    "chunk_id": "tactics_025",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "material: the pieces and pawns each side has. Being ahead in material means having more total point value."
+  },
+  {
+    "chunk_id": "tactics_026",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "initiative: the ability to keep making threats so that the opponent must keep responding."
+  },
+  {
+    "chunk_id": "tactics_027",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "major pieces: the queens and rooks. The bishops and knights are called minor pieces."
+  },
+  {
+    "chunk_id": "tactics_028",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "bishop pair: having both bishops while the opponent does not. Two bishops working together are often an advantage in open positions."
+  },
+  {
+    "chunk_id": "tactics_029",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "kingside castling: castling with the rook on the h-file, also called short castling and written O-O."
+  },
+  {
+    "chunk_id": "tactics_030",
+    "doc_id": "tactics",
+    "doc_title": "Chess Tactics and Common Terms (project-authored glossary)",
+    "section": "Glossary: tactics and common terms",
+    "text": "queenside castling: castling with the rook on the a-file, also called long castling and written O-O-O."
   }
 ]

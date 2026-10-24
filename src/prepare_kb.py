@@ -19,6 +19,12 @@ DOCS = [
      "title": "FIDE Laws of Chess - Basic Rules of Play", "kind": "rules"},
     {"doc_id": "wikibooks", "path": RAW_DIR / "wikibooks_opening_principles.md",
      "title": "Chess Opening Principles (Wikibooks)", "kind": "prose"},
+    {"doc_id": "overview", "path": RAW_DIR / "beginner_overview.md",
+         "title": "Chess for Absolute Beginners (Project-authored overview)", "kind": "prose"},
+    {"doc_id": "strategy", "path": RAW_DIR / "strategy_basics.md",
+         "title": "Basic Chess Strategy for Beginners (project-authored)", "kind": "prose"},
+    {"doc_id": "tactics", "path": RAW_DIR / "tactics_and_terms.md",
+         "title": "Chess Tactics and Common Terms (project-authored glossary)", "kind": "prose"} 
 ]
 
 RULE_START = re.compile(r"^\d+(\.\d+)+")        # 1.1  3.7.3.1-2  5.2.1
