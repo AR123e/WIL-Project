@@ -7,7 +7,7 @@ CHUNKS_PATH = ROOT / "data" / "processed" / "chunks.json"
 EVAL_DIR = ROOT / "eval"
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_TAGS_URL="https://localhost:11434/api/tags"
+OLLAMA_TAGS_URL="http://localhost:11434/api/tags"
 MODEL = "llama3.1"          # answer generator
 JUDGE_MODEL = "llama3.1"    # LLM-as-judge for faithfulness (swap for a bigger model if available)
 
